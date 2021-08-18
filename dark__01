@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+* { box-sizing: border-box; }
+body { font-family: "Open Sans", sans-serif; line-height: 1.75em; font-size: 18px; background-color: rgb(34, 34, 34); color: rgba(255, 255, 255, 0.7); }
+.simple-container { max-width: 800px; margin: 30px auto; background-color: rgb(90, 90, 92); padding: 30px 40px 10px; box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 12px 3px; }
+.simple-print { fill: white; stroke: white; }
+.simple-print svg { height: 100%; }
+.simple-close { color: white; border-color: white; }
+.simple-ext-info {display:none;}
+p { font-size: 18px; }
+h1 { font-size: 28px; line-height: 36px; }
+h2 { font-size: 20px; line-height: 28px; }
+h3 { font-size: 18px; line-height: 25px; padding-top: 15px; padding-bottom: 15px; border-bottom: 1px solid rgb(216, 216, 216); border-top: 1px solid rgb(216, 216, 216); }
+hr { height: 1px; background-color: rgb(216, 216, 216); border: none; width: 100%; margin: 0px; }
+a[href] { color: rgba(84, 190, 255, 0.95); text-decoration: none; }
+a[href]:hover { color: rgba(133, 208, 255, 0.95); }
+img { max-width: 100%; }
+li { line-height: 1.5em; }
+aside, [class*="sidebar"], [id*="sidebar"] { max-width: 90%; margin: 0px auto; border: 1px solid lightgrey; padding: 5px 15px; }
+@media (min-width: 1921px) {
+  body { font-size: 22px; }
+}
+@media print {
+  .simple-container { box-shadow: none; }
+}
