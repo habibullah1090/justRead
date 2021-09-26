@@ -5,6 +5,42 @@
 * { box-sizing: border-box; }
 body { font-family: Merriweather, serif; line-height: 1.75em; font-size: 20px; color: rgb(40, 40, 40); background-color: rgb(255, 252, 242); }
 h1, h2 { font-family: "Source Sans Pro Bold", sans-serif; }
+
+/*Custom start...*/
+::selection{
+        background-color: #F1954A;
+    color: #1e2b26;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: rgba(0, 0, 0, 1);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #e78632;
+  background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,.3) 20%,transparent 20%,transparent 40%,rgba(255, 255, 255, 0.3) 40%,rgba(255,255,255,.3) 60%,transparent 60%,transparent 80%,rgba(255, 255, 255, 0.3) 80%);
+  border-radius: 10px;
+}
+
+.simple-ext-info,
+.jr-tooltip,
+.jr-notifier,
+.jr-tooltip.jr-notifier,
+.premium-feature, 
+.jr-edit-bar,
+.jr-dark
+
+{
+    opacity: 0;
+    visibility: hidden;
+}
+
+/*end of custom*/
+
 h1 { font-size: 1.875em; line-height: 2.125em; }
 h2 { font-size: 1.25em; line-height: 1.5625em; }
 h3 { font-family: Merriweather, serif; font-size: 1em; line-height: 1.7em; padding-top: 0.9375em; padding-bottom: 0.9375em; border-bottom: 1px solid rgb(216, 216, 216); border-top: 1px solid rgb(216, 216, 216); }
