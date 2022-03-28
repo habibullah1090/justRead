@@ -1,0 +1,43 @@
+@font-face { font-family: "Source Sans Pro Semibold"; src: url("chrome-extension://dgmanlpmmkibanfdgjocnabmcaclkmod/fonts/SourceSansPro-Semibold.ttf"); }
+@font-face { font-family: "Source Sans Pro Bold"; src: url("chrome-extension://dgmanlpmmkibanfdgjocnabmcaclkmod/fonts/SourceSansPro-Bold.ttf"); }
+@font-face { font-family: "Source Sans Pro Light"; src: url("chrome-extension://dgmanlpmmkibanfdgjocnabmcaclkmod/fonts/SourceSansPro-Light.ttf"); }
+@font-face { font-family: "Open Sans"; src: url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"); }
+@font-face { font-family: Inconsolata; src: url("https://fonts.googleapis.com/css?family=Inconsolata"); }
+@media screen {
+  * { margin: 0px; padding: 0px; box-sizing: border-box; }
+}
+body { background-color: rgb(253, 246, 227); color: rgb(101, 123, 131); font-family: "Open Sans", sans-serif; font-size: 22px; line-height: 1.75em; }
+h1, h2 { font-family: "Source Sans Pro Bold", sans-serif; color: rgb(99, 172, 229); font-weight: bold; }
+h1 { font-size: 1.875em; line-height: 2.125em; }
+h2 { font-size: 1.25em; line-height: 1.5625em; }
+h3 { border-bottom: 1px solid rgb(147, 161, 161); border-top: 1px solid rgb(147, 161, 161); font-family: "Source Sans Pro Bold", sans-serif; font-size: 1em; line-height: 1.7em; padding-bottom: 0.9375em; padding-top: 0.9375em; }
+hr { background-color: rgb(114, 121, 121); border: none; height: 1px; margin: 10px 0px; width: 100%; }
+a[href] { color: rgb(119, 212, 127); font-weight: bold; background-color: transparent; text-decoration: none; border-bottom: 1px solid currentcolor; transition: all 0.1s ease 0s; }
+a[href]:hover { color: rgb(253, 246, 226); background: rgb(102, 183, 109); font-weight: bold; }
+img { max-width: 100%; text-align: center; }
+li { line-height: 1.5em; list-style: none; }
+code { background-color: rgb(238, 232, 213); font-family: Inconsolata, monospace; overflow: auto; padding: 10px; }
+pre { background-color: rgb(238, 232, 213); font-family: Inconsolata, monospace; font-size: 90%; overflow: auto; padding: 10px; }
+aside, [class*="sidebar"], [id*="sidebar"] { border: 1px solid rgb(238, 232, 213); margin: 0px auto; max-width: 90%; padding: 5px 15px; }
+.simple-date { border-right: 1px solid rgb(147, 161, 161); display: inline-block; font-family: "Source Sans Pro Light", sans-serif; font-size: 18px; padding-bottom: 10px; padding-right: 15px; padding-top: 10px; }
+.rtl .simple-date { border-left: 1px solid rgb(147, 161, 161); border-right: none; padding-left: 15px; padding-right: 0px; }
+.simple-author { color: rgb(220, 50, 47); display: inline-block; font-family: "Source Sans Pro Semibold", sans-serif; font-size: 18px; line-height: 22px; padding-bottom: 10px; padding-left: 10px; padding-top: 10px; }
+.simple-author:hover { color: rgba(197, 33, 30, 0.925); }
+.rtl .simple-author { padding-left: 0px; padding-right: 10px; }
+.simple-container { margin: 0px auto; max-width: 750px; padding-bottom: 20px; padding-top: 70px; }
+@media (max-width: 750px) {
+  .simple-container { padding-left: 50px; padding-right: 50px; }
+}
+@media (max-width: 450px) {
+  .simple-container { padding-left: 20px; padding-right: 20px; padding-top: 30px; }
+}
+::-webkit-scrollbar { width: 12px; height: 12px; }
+::-webkit-scrollbar-track { border-radius: 0px; background-color: rgb(0, 0, 0); }
+::-webkit-scrollbar-thumb { background-color: rgb(231, 134, 50); background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.3) 20%, transparent 20%, transparent 40%, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0.3) 60%, transparent 60%, transparent 80%, rgba(255, 255, 255, 0.3) 80%); border-radius: 10px; }
+.simple-ext-info, .jr-tooltip, .jr-notifier, .jr-tooltip.jr-notifier, .premium-feature, .jr-edit-bar, .jr-dark { opacity: 0; visibility: hidden; }
+::selection { background: rgb(123, 123, 123); color: rgb(250, 243, 243); }
+.emoji, svg.icon { width: 1em; }
+.simple-meta { text-align: center; padding-bottom: 1rem; }
+.j1lvzwm4 { max-width: 50px; }
+.bp9cbjyn { display: flex; }
+.content-container { padding-top: 1rem; }
