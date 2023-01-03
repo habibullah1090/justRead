@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+:root {
+  /* selection */
+  --clr-selection: #3a5955;
+  --clr-bg-selection: rgba(67, 199, 181, 0.5);
+  /* #98E1D7 */
+
+  /* main */
+  --clr-bg-main: #41c7b5;
+  --clr-main: #3a5955;
+
+  /* container */
+  --clr-bg-container: #ffffff;
+  --max-width-container: 800px;
+  /* scroll bar */
+  --scroll-width: 12px;
+  /* font sizes */
+  --fs-p: 20px;
+  
+  
+  scrollbar-color: currentcolor  #41c7b5;
+  scrollbar-width: thin;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: calc(var(--fs-p) * 2);
+  font-size: var(--fs-p);
+  background-color: var(--clr-bg-main);
+  color: var(--clr-main);
+  
+  scrollbar-color: yellow blue;
+}
+.simple-container {
+  max-width: var(--max-width-container);
+  margin: 0 auto 30px;
+  background-color: var(--clr-bg-container);
+  padding: 0 40px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 12px 3px;
+}
+
+/* font sizes */
+
+p {
+  font-size: var(--fs-p);
+}
+h1 {
+  font-size: calc(var(--fs-p) + 8px);
+  line-height: 36px;
+}
+h2 {
+  font-size: calc(var(--fs-p) + 6px);
+  line-height: 28px;
+}
+h3 {
+  font-size: calc(var(--fs-p) + 3px);
+  line-height: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(216, 216, 216);
+  border-top: 1px solid rgb(216, 216, 216);
+}
+
+/* end of font sizes */
+
+.simple-close {
+  color: var(--clr-main);
+  border-color: white;
+}
+.simple-close:hover {
+  background-color: var(--clr-bg-container);
+  color: var(--clr-bg-main);
+  border-color: var(--clr-bg-main);
+}
+
+/* for web.facebook.com 's large reaction icones */
+svg,
+img[src*="data"] {
+  max-width: 100px;
+}
+
+/*Custom start...*/
+::selection {
+  background-color: var(--clr-bg-selection);
+  color: var(--clr-selection);
+}
+
+
+::-webkit-scrollbar {
+  width: var(--scroll-width);
+  height: var(--scroll-width);
+}
+::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: rgba(0, 0, 0, 1);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--clr-bg-container);
+  background-image: -webkit-linear-gradient(
+    45deg,
+    var(--clr-bg-main) 20%,
+    transparent 20%,
+    transparent 40%,
+    var(--clr-bg-main) 40%,
+    var(--clr-bg-main) 60%,
+    transparent 60%,
+    transparent 80%,
+    var(--clr-bg-main) 80%
+  );
+  border-radius: 10px;
+}
+
+.simple-ext-info,
+.jr-tooltip,
+.jr-notifier,
+.jr-tooltip.jr-notifier,
+.premium-feature,
+.jr-edit-bar,
+.jr-dark {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.simple-print,
+.simple-share,
+.simple-delete {
+  display: none;
+}
+
+hr {
+  height: 1px;
+  background-color: rgb(216, 216, 216);
+  border: none;
+  width: 100%;
+  margin: 0px;
+}
+a[href] {
+  color: rgba(84, 190, 255, 0.95);
+  text-decoration: none;
+}
+a[href]:hover {
+  color: rgba(133, 208, 255, 0.95);
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+li {
+  line-height: 1.5em;
+}
+aside,
+[class*="sidebar"],
+[id*="sidebar"] {
+  max-width: 90%;
+  margin: 0px auto;
+  border: 1px solid lightgrey;
+  padding: 5px 15px;
+}
+@media (min-width: 1921px) {
+  body {
+    font-size: 22px;
+  }
+}
+@media print {
+  .simple-container {
+    box-shadow: none;
+  }
+}
+
+/*for facebook*/
+
+div[role="navigation"],
+div[class="rq0escxv lpgh02oy du4w35lb rek2kq2y"],
+div[data-visualcompletion="ignore"],
+div[class="k4urcfbm"]
+{
+   display: none;
+}
+
